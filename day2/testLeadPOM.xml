@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suite">
+  <test thread-count="5" parallel="none" name="Test1_CreateLead" verbose="5">
+    <classes>
+      <class name="testcases.LeadCreationTC002"/>
+      <class name="testcases.LoginTC001"/>
+      <class name="runner.BDDLoginTC_001"/>
+    </classes>
+  </test> <!-- Test -->
+   <test thread-count="3" parallel="none" name="Test2_AccCreation" verbose="5">
+	 <classes>
+      <class name="testcases.TC_001_AccCreation"/>
+      <class name="runner.BDDAccountCreation_TC_001"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
